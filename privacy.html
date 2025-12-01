@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hidden Tiles Saga – Privacy Policy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <title>Privacy Policy – MahjKo-ko Royale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
         :root {
-            --bg: #050814;
-            --card: #0f172a;
-            --accent: #38bdf8;
-            --accent-soft: rgba(56, 189, 248, 0.12);
-            --text-main: #e5e7eb;
-            --text-soft: #9ca3af;
-            --border: rgba(148, 163, 184, 0.35);
-            --shadow: rgba(15, 23, 42, 0.85);
+            --bg: #f7f3eb;
+            --card: #ffffff;
+            --accent: #e19b4a;
+            --accent-soft: #f3c27a;
+            --text-main: #2b2b2b;
+            --text-muted: #666666;
+            --border-soft: #e1d7c7;
         }
 
         * {
@@ -22,100 +21,74 @@
 
         body {
             margin: 0;
-            min-height: 100vh;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
-                         "Helvetica Neue", Arial, sans-serif;
-            background:
-                radial-gradient(circle at 0% 0%, rgba(56,189,248,0.18), transparent 55%),
-                radial-gradient(circle at 100% 100%, rgba(129,140,248,0.16), transparent 55%),
-                var(--bg);
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background: radial-gradient(circle at top, #fdf7ee 0, var(--bg) 45%, #efe4d4 100%);
             color: var(--text-main);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 32px 16px;
+            line-height: 1.6;
         }
 
-        .shell {
-            width: 100%;
-            max-width: 840px;
+        .wrap {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 32px 16px 40px;
         }
 
         .card {
-            background: radial-gradient(circle at 0 0, rgba(56,189,248,0.22), transparent 60%),
-                        radial-gradient(circle at 100% 100%, rgba(129,140,248,0.16), transparent 60%),
-                        var(--card);
-            border-radius: 24px;
-            border: 1px solid var(--border);
+            background: var(--card);
+            border-radius: 18px;
+            padding: 24px 20px 30px;
             box-shadow:
-                0 22px 45px -22px var(--shadow),
-                0 0 0 1px rgba(15,23,42,0.8);
-            padding: 28px 24px 26px;
-            backdrop-filter: blur(16px);
+                0 18px 35px rgba(0, 0, 0, 0.05),
+                0 0 0 1px rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--border-soft);
         }
 
         header {
+            text-align: center;
             margin-bottom: 22px;
-            padding-bottom: 18px;
-            border-bottom: 1px solid rgba(148,163,184,0.45);
         }
 
-        header h1 {
+        h1 {
+            font-size: 1.9rem;
             margin: 0 0 6px;
-            font-size: 1.6rem;
-            letter-spacing: 0.03em;
+            letter-spacing: 0.02em;
         }
 
-        header .subtitle {
-            margin: 0;
-            font-size: 0.9rem;
-            color: var(--text-soft);
-        }
-
-        header .pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 4px 10px;
-            border-radius: 999px;
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            background: rgba(15, 23, 42, 0.9);
-            border: 1px solid rgba(56,189,248,0.45);
-            color: var(--accent);
-            margin-bottom: 10px;
+        .tagline {
+            font-size: 0.95rem;
+            color: var(--text-muted);
         }
 
         h2 {
+            font-size: 1.2rem;
             margin: 22px 0 8px;
-            font-size: 1.05rem;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-            color: var(--accent);
         }
 
         p {
             margin: 6px 0 10px;
-            font-size: 0.95rem;
-            line-height: 1.55;
-            color: var(--text-soft);
         }
 
         ul {
-            margin: 6px 0 12px 1.05rem;
-            padding-left: 0.7rem;
+            margin: 4px 0 12px 1.2rem;
+            padding: 0;
         }
 
         li {
-            margin: 4px 0;
-            font-size: 0.94rem;
-            line-height: 1.5;
-            color: var(--text-soft);
+            margin-bottom: 4px;
         }
 
-        strong {
-            color: var(--text-main);
+        .pill {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, var(--accent-soft), var(--accent));
+            color: #3b260b;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
         }
 
         a {
@@ -127,217 +100,152 @@
             text-decoration: underline;
         }
 
-        .badge-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin: 10px 0 4px;
+        .section-meta {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 4px;
         }
 
-        .badge {
-            padding: 4px 9px;
-            border-radius: 999px;
-            border: 1px solid rgba(148,163,184,0.6);
-            font-size: 0.75rem;
-            color: var(--text-soft);
-            background: rgba(15,23,42,0.9);
-        }
-
-        .note {
-            margin-top: 6px;
-            padding: 10px 12px;
-            border-radius: 12px;
-            background: var(--accent-soft);
-            border: 1px solid rgba(56,189,248,0.35);
-            font-size: 0.86rem;
-            color: var(--text-main);
-        }
-
-        footer {
-            margin-top: 18px;
-            padding-top: 14px;
-            border-top: 1px solid rgba(148,163,184,0.45);
-            font-size: 0.8rem;
-            color: #6b7280;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 8px;
-        }
-
-        @media (min-width: 720px) {
+        @media (max-width: 640px) {
             .card {
-                padding: 32px 32px 28px;
+                padding: 20px 16px 24px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
             }
         }
     </style>
 </head>
 <body>
-<div class="shell">
+<div class="wrap">
     <div class="card">
         <header>
-            <div class="pill">Hidden Tiles Saga</div>
-            <h1>Privacy Policy</h1>
-            <p class="subtitle">
-                Last updated: <strong>December 2025</strong>
+            <div class="pill">Privacy Policy</div>
+            <h1>MahjKo-ko Royale</h1>
+            <p class="tagline">
+                This Privacy Policy explains how MahjKo-ko Royale handles your data when you play the game.
             </p>
         </header>
 
         <section>
-            <h2>1. Overview</h2>
-            <p>
-                This Privacy Policy explains how <strong>Hidden Tiles Saga</strong> handles information
-                when you use the app. The app itself is designed as a casual puzzle experience and
-                does not ask you to create an account or submit personal details.
+            <p class="section-meta">
+                Last updated: <strong>December 1, 2025</strong>
             </p>
-
-            <div class="badge-row">
-                <div class="badge">No registration</div>
-                <div class="badge">No in-app analytics by us</div>
-                <div class="badge">No advertising SDKs by us</div>
-            </div>
-
-            <p class="note">
-                In short, the app does not collect, store, or share personally identifiable information
-                about you on our own servers.
+            <p>
+                MahjKo-ko Royale is a casual mobile game. This Privacy Policy describes what information we do and do not collect,
+                how it may be used, and what choices you have.
+                By installing or playing MahjKo-ko Royale, you agree to the practices described here.
             </p>
         </section>
 
         <section>
-            <h2>2. What we do not collect</h2>
+            <h2>1. Information we do not collect</h2>
             <p>
-                The Hidden Tiles Saga app does <strong>not</strong> collect or process the following
-                types of data for our own use:
+                MahjKo-ko Royale is designed to be simple and lightweight. The game:
             </p>
             <ul>
-                <li>Names, email addresses, phone numbers</li>
-                <li>Location data (GPS or precise location)</li>
-                <li>Payment or billing information</li>
-                <li>Contact lists, calendars, or photos</li>
-                <li>Health, fitness, or other sensitive data</li>
+                <li>does not require you to create an account or log in,</li>
+                <li>does not ask you to provide your name, email, phone number, or address,</li>
+                <li>does not request access to your contacts, photos, microphone, or precise location.</li>
             </ul>
             <p>
-                We do not operate any backend servers for user tracking or profiling related to this app.
+                We do not knowingly collect any information that directly identifies you as an individual.
             </p>
         </section>
 
         <section>
-            <h2>3. Game board and third-party content</h2>
+            <h2>2. Game progress and local storage</h2>
             <p>
-                Hidden Tiles Saga displays a puzzle experience that is rendered from an external game
-                board hosted on the internet. This means that:
+                The game may store basic progress information locally on your device,
+                such as completed levels, simple settings, and preferences (for example, language or visual options).
+                This information is stored only on your device’s local storage
+                and is used solely so the game can remember your progress and settings between sessions.
             </p>
-            <ul>
-                <li>
-                    The app opens and displays interactive content provided by a third-party site.
-                </li>
-                <li>
-                    That third-party site may process technical information (for example, IP address,
-                    device type, or basic usage data) in accordance with its own privacy policy.
-                </li>
-                <li>
-                    We do not control, operate, or directly access any servers belonging to that third-party.
-                </li>
-            </ul>
             <p>
-                We strongly recommend that you review the privacy policy of the game provider
-                whose content is shown in the app, as their practices may differ from ours.
+                You can usually clear this data by deleting the app or using your device’s application data settings.
             </p>
         </section>
 
         <section>
-            <h2>4. Information stored on your device</h2>
+            <h2>3. Analytics and third-party services</h2>
             <p>
-                The app may store small pieces of information locally on your device in order to:
+                At the moment, MahjKo-ko Royale does not intentionally integrate third-party analytics,
+                advertising SDKs, or tracking tools within the game itself.
             </p>
-            <ul>
-                <li>Remember the last opened board or screen inside the game board</li>
-                <li>Improve loading behavior and reduce waiting times</li>
-                <li>Preserve certain technical markers from the embedded board</li>
-            </ul>
             <p>
-                This information can include:
-            </p>
-            <ul>
-                <li>A saved link that allows the app to reopen the same board later</li>
-                <li>Technical markers related to the embedded board’s browsing session</li>
-            </ul>
-            <p>
-                These items are stored only on your device (for example, using the system’s
-                preferences storage). They are not transmitted by us to our own servers.
+                However, the app may be distributed through third-party platforms such as the Apple App Store
+                or Google Play. These platforms may collect their own technical, usage, or diagnostic data in accordance
+                with their own privacy policies. We do not control how these platforms handle such data.
+                For more details, please review the privacy policies of the relevant store or platform.
             </p>
         </section>
 
         <section>
-            <h2>5. Children’s privacy</h2>
+            <h2>4. Children’s privacy</h2>
             <p>
-                Hidden Tiles Saga is intended for a general audience. We do not knowingly collect
-                personal information from children. Because the app does not require registration
-                or submission of personal details, we do not have a way to identify individual users,
-                including children.
-            </p>
-            <p>
-                If you are a parent or guardian and believe that a child has provided personal
-                information to a third-party game provider shown inside the app, please review
-                that provider’s privacy policy and contact them directly if necessary.
+                MahjKo-ko Royale is intended for a general audience and is not specifically targeted at children.
+                We do not knowingly collect personal information from children.
+                If you believe that a child has provided us with personal information by mistake,
+                please contact us using the email address below and we will take steps to address the situation.
             </p>
         </section>
 
         <section>
-            <h2>6. Data sharing and transfers</h2>
+            <h2>5. Data sharing</h2>
             <p>
-                We do not sell, rent, or trade your personal information. We do not share personal
-                data with advertisers or data brokers.
+                Since MahjKo-ko Royale does not collect personally identifiable information,
+                there is no personal data to sell, rent, or trade with third parties.
             </p>
             <p>
-                Any technical information processed by the third-party game board is handled by
-                that provider under its own terms and policies. We do not receive detailed user
-                profiles or contact information from that provider.
-            </p>
-        </section>
-
-        <section>
-            <h2>7. Security</h2>
-            <p>
-                Hidden Tiles Saga does not maintain its own user database or cloud service which
-                stores personal information. Local information saved on your device is handled
-                by the operating system’s standard mechanisms.
-            </p>
-            <p>
-                Please keep your device and operating system up to date and use a secure lock
-                method to protect local data stored on your phone or tablet.
+                If this ever changes in a future version of the game (for example, if online features are added),
+                this Privacy Policy will be updated to explain what is collected and how it is shared,
+                and you will see the updated version in the app or on the store page.
             </p>
         </section>
 
         <section>
-            <h2>8. Changes to this policy</h2>
+            <h2>6. Data security</h2>
             <p>
-                We may update this Privacy Policy from time to time to reflect improvements to
-                the app or changes in legal requirements. When we make significant changes, we
-                will update the “Last updated” date at the top of this page.
+                We aim to keep MahjKo-ko Royale simple and to limit the data stored.
+                Progress and settings are kept locally on your device.
+                Please remember that no system is perfectly secure, and keeping your device and operating system
+                up to date is an important part of protecting your information.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. International users</h2>
+            <p>
+                MahjKo-ko Royale may be downloaded and used in different countries and regions.
+                Because the game itself does not collect personal data, there is no transfer of your personal
+                information between countries by us. Any data collected by app stores or platform owners is handled under
+                their own terms and policies.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Changes to this Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time, for example when we add new features or adjust
+                how the game works. Any changes will be posted in the updated version of this page.
             </p>
             <p>
-                Continued use of Hidden Tiles Saga after an update means that you accept the
-                revised Privacy Policy.
+                When we make significant changes, we will update the “Last updated” date at the top of this document.
+                Your continued use of MahjKo-ko Royale after any changes means you accept the updated Policy.
             </p>
         </section>
 
         <section>
             <h2>9. Contact</h2>
             <p>
-                If you have any questions about this Privacy Policy or how Hidden Tiles Saga
-                works, you can contact the developer at:
+                If you have any questions about this Privacy Policy or about MahjKo-ko Royale,
+                you can contact the developer at:
             </p>
             <p>
-                <strong>Email:</strong>
-                <a href="mailto:spencerrory55@icloud.com">spencerrory55@icloud.com</a>
+                Email: <a href="mailto:danarmalik06@icloud.com">danarmalik06@icloud.com</a>
             </p>
         </section>
-
-        <footer>
-            <span>Hidden Tiles Saga</span>
-            <span>Privacy Policy – Informational purposes only</span>
-        </footer>
     </div>
 </div>
 </body>
